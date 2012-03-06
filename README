@@ -1,0 +1,22 @@
+This simple app does two things:
+
+1. It takes a string from the user and POSTs the data to a Java Servlet. The Java Servlet receives the string and analyzes it based on its SoundEx code. The SoundEx information is then sent back to the iOS app where it is displayed within the UITextView. The number of times that the servlet is accessed is calculated within the application and displayed within the iOS app. 
+
+Errors may occur if the Tomcat server is shut down for any reason. 
+
+More information on the SoundEx algorithm can be found here:
+
+  http://en.wikipedia.org/wiki/Soundex
+
+2. A more exciting use of this app is to access the Twitter timeline for any user entered in the search bar from within the iOS app. Simply enter a user name and press enter. After the SoundEx information is retrieved from the Java Servlet, you may click on the "get timeline" button to send a GET request from Twitter given the user specified. The information is sent back via JSON. 
+
+Please feel free to alter this application in any way, shape or form! 
+
+- All Java assets are within the de.manderson.wtp.filecounter folder
+
+- All XCode/ iOS assets are within the ClientMoi folder
+
+Enjoy!
+
+Mark
+
